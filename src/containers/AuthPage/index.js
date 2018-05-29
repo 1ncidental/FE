@@ -40,16 +40,16 @@ class AuthPage extends React.Component {
 
     switch (this.props.match.params.authType) {
       case 'login':
-        requestURL = 'http://localhost:1337/auth/local';
+        requestURL = 'http://206.189.200.105:1337/auth/local';
         break;
       case 'register':
-        requestURL = 'http://localhost:1337/auth/local/register';
+        requestURL = 'http://206.189.200.105:1337/auth/local/register';
         break;
       case 'reset-password':
-        requestURL = 'http://localhost:1337/auth/reset-password';
+        requestURL = 'http://206.189.200.105:1337/auth/reset-password';
         break;
       case 'forgot-password':
-        requestURL = 'http://localhost:1337/auth/forgot-password';
+        requestURL = 'http://206.189.200.105:1337/auth/forgot-password';
         break;
       default:
     }
@@ -76,7 +76,7 @@ class AuthPage extends React.Component {
 
     // This line is required for the callback url to redirect your user to app
     if (this.props.match.params.authType === 'forgot-password') {
-      set(body, 'url', 'http://localhost:3000/auth/reset-password');
+      set(body, 'url', 'http://206.189.200.105:3000/auth/reset-password');
     }
 
     request(requestURL, { method: 'POST', body: this.state.value })

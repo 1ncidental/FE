@@ -58,7 +58,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.0",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7"
   },
@@ -74,7 +74,7 @@
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
     ],
     "testEnvironment": "node",
-    "testURL": "http://localhost",
+    "testURL": "http://0.0.0.0",
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",

@@ -31,7 +31,7 @@ const TableRow = (props) => {
           // Get the first pictures for display
           const picture = isArray(props.data[header]) ? get(props.data, [header, '0', 'url'], '') : get(props.data, ['header', 'url'], '');
           // check if we need to add the strapiBackendURL if the upload provider is local
-          const src = startsWith(picture, '/') ? `http://localhost:1337${picture}` : picture;
+          const src = startsWith(picture, '/') ? `http://0.0.0.0:1337${picture}` : picture;
 
           return (
             <td key={header}>
