@@ -13,8 +13,8 @@ import ConnectPage from '../../containers/ConnectPage';
 import EditPage from '../../containers/EditPage';
 import HomePage from '../../containers/HomePage';
 import NotFoundPage from '../../containers/NotFoundPage';
-import ProductDetailsPage from '../../containers/ProductDetailsPage';
-import ProductsPage from '../../containers/ProductsPage';
+import ProductDetailsPage from '../../containers/MachineDetailsPage';
+import ProductsPage from '../../containers/MachinesPage';
 
 
 // This component ios HoC that prevents the user from accessing a route if he's not logged in
